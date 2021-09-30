@@ -1,0 +1,38 @@
+
+<!-- header section starts  -->
+<app-header></app-header>
+
+<!-- home section starts  -->
+<app-home></app-home>
+
+<!-- speciality section starts  -->
+<app-speciality></app-speciality>
+
+<!-- popular section starts  -->
+<app-popular></app-popular>
+
+<!-- steps section starts  -->
+<app-steps></app-steps>
+
+<!-- gallery section starts  -->
+<app-gallery></app-gallery>
+
+<!-- review section starts  -->
+<app-review></app-review>
+
+<!-- order section starts  -->
+<app-order></app-order>
+
+<!-- footer section  -->
+<app-footer></app-footer>
+
+
+<!-- scroll top button  -->
+<a href="#" *ngIf="isShow" (click)="gotoTop()" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+<div class="loader-container" *ngIf="load" >
+    <img src="../assets/imagens/loader.gif" alt="">
+</div>
+
+<router-outlet></router-outlet>
